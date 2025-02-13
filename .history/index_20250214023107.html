@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI CAPTCHA - Buat Aku Senang!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="theme-color" content="#1a1b1e" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container fade-in">
+      <h1 class="page-title">CAPTCHA Emosional AI 🤖</h1>
+      <div class="character" id="character">
+        <div class="character-wrapper">
+          <img
+            src="asset/karakterTanpaWajah.svg"
+            alt="Karakter"
+            id="characterBase"
+          />
+          <img
+            src="asset/alis netral.svg"
+            alt="Alis"
+            id="characterEyebrows"
+            class="character-feature"
+          />
+          <img
+            src="asset/mata.svg"
+            alt="Mata"
+            id="characterEyes"
+            class="character-feature"
+          />
+          <img
+            src="asset/mulut netral.svg"
+            alt="Mulut"
+            id="characterMouth"
+            class="character-feature"
+          />
+        </div>
+        <p id="characterMessage">
+          Hai! Aku Resan, mahasiswa informatika yang hobi gym. Buat aku senang
+          yuk! 😊
+        </p>
+      </div>
+      <div class="input-section">
+        <input
+          type="text"
+          id="userInput"
+          placeholder="Katakan sesuatu yang menyenangkan..."
+          required
+          autocomplete="off"
+          maxlength="100"
+        />
+        <button onclick="checkEmotion()">
+          <span>Kirim</span>
+        </button>
+      </div>
+      <div id="result" role="status"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
